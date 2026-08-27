@@ -1,0 +1,14 @@
+CREATE DATABASE escolaABC;
+USE escola ABC;
+
+CREATE TABLE sala(
+idturma INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+nome_turma VARCHAR(45) NOT NULL,
+periodo VARCHAR(45) NOT NULL,
+sala_idsala INT,
+FOREIGN KEY (sala_idsala) REFERENCES sala(idsala)
+);
+
+CREATE TABLE turma(
+idturma INT NOT NULL AUTO_INCREMENT
+);
