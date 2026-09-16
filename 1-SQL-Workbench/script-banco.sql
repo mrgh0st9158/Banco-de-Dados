@@ -67,3 +67,30 @@ RENAME TO categoria;
 
 ALTER TABLE tipo_conta
 ADD COLUMN observacao TEXT NOT NULL;
+
+INSERT INTO categoria
+(nome_categoria_cliente, descricao)
+VALUES
+("Private", "cliente com renda acima de 10mil"), 
+("Exclusive", "cliente com renda acima de 20mil"),
+("Gold", "cliente com renda acima de 30mil"),
+("Básico" "cliente com renda acima de 40mil");
+
+INSERT INTO clientes
+(nome_cliente)
+VALUES
+("Mariom"),
+("Diego"),
+("Erick"),
+("Luanna"),
+("Tuler"),
+("Matheus"),
+("Tahinan"),
+("Rafael");
+
+INSERT INTO agencia
+(nome_agencia)
+VALUES
+("Campeche"),
+("Ingleses"),
+("Centro");
