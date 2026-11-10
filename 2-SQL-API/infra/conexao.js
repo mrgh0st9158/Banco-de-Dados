@@ -1,11 +1,11 @@
-import mysql from "mysql2"
+import mysql from 'mysql2'
 
 const conexao = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "*Guc146687",
-    database: "cadastro_estudantes"
-});
+    host: 'localhost',
+    user: 'root',
+    password: 'senai',
+    database: 'cadastro_estudantes'
+})
 
 conexao.connect()
 
